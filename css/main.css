@@ -16,3 +16,15 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.dino-wrap {
+  display: block;
+}
+
+.dino:nth-child(2) {
+  display: none;
+}
+
+.dino:last-child {
+  display: none;
+}
