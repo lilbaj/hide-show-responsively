@@ -17,8 +17,18 @@ html {
   box-sizing: inherit;
 }
 
-.dino-wrap {
+img {
   display: block;
+  width: 100%;
+}
+
+.dino-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dino {
+  width: 100%;
 }
 
 .dino:nth-child(2) {
@@ -27,4 +37,45 @@ html {
 
 .dino:last-child {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .dino {
+    width: 50%;
+  }
+
+  .dino:nth-child(2) {
+    display: block;
+  }
+
+  .dino:last-child {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .dino {
+    width: 33.33%;
+    display: inline-block;
+  }
+
+  .dino:first-child {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .dino {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .dino:first-child {
+    display: inline-block;
+  }
 }
